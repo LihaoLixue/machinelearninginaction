@@ -21,12 +21,12 @@ def classify0(inX, dataSet, labels, k):
     sqDiffMat = diffMat**2
     sqDistances = sqDiffMat.sum(axis=1)
     distances = sqDistances**0.5
-    sortedDistIndicies = distances.argsort()     
+    sortedDistIndicies = distances.argsort()        #argsort()将x中的元素从小到大排列，提取其对应的index(索引)
     classCount={}          
     for i in range(k):
         voteIlabel = labels[sortedDistIndicies[i]]
         classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1
-    sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
+    sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)
     return sortedClassCount[0][0]
 
 def createDataSet():
