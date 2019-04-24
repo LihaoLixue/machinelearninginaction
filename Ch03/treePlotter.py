@@ -5,20 +5,23 @@ Created on Oct 14, 2010
 '''
 import matplotlib.pyplot as plt
 
-decisionNode = dict(boxstyle="sawtooth", fc="0.8")
+decisionNode = dict(boxstyle="sawtooth", fc="0.8")  #创建字典。 boxstyle=”sawtooth” 表示注解框的边缘是波浪线，fc=”0.8” 是颜色深度
 leafNode = dict(boxstyle="round4", fc="0.8")
 arrow_args = dict(arrowstyle="<-")
+# 输入以为例：{‘no surfacing’: {0: ‘no’, 1: {‘flippers’: {0: ‘no’, 1: ‘yes’}}}}
 
+#计算该树有多少个叶子
 def getNumLeafs(myTree):
     numLeafs = 0
-    firstStr = myTree.keys()[0]
-    secondDict = myTree[firstStr]
-    for key in secondDict.keys():
-        if type(secondDict[key]).__name__=='dict':#test to see if the nodes are dictonaires, if not they are leaf nodes
+    firstStr = list(myTree.keys())[0]    # 注(a) 获得第一个key值（根节点） 'no surfacing'
+    secondDict = myTree[firstStr]        # 获得value值 {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}
+    for key in secondDict.keys():        #  键值：0 和 1
+        if type(secondDict[key]).__name__=='dict':# 判断如果里面的一个value是否还是dict
             numLeafs += getNumLeafs(secondDict[key])
-        else:   numLeafs +=1
+        else:
+            numLeafs +=1
     return numLeafs
-
+#计算该树有多少层
 def getTreeDepth(myTree):
     maxDepth = 0
     firstStr = myTree.keys()[0]
@@ -71,13 +74,13 @@ def createPlot(inTree):
     plotTree(inTree, (0.5,1.0), '')
     plt.show()
 
-#def createPlot():
-#    fig = plt.figure(1, facecolor='white')
-#    fig.clf()
-#    createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses 
-#    plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
-#    plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
-#    plt.show()
+def createPlot():
+   fig = plt.figure(1, facecolor='white')
+   fig.clf()
+   createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses
+   plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
+   plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
+   plt.show()
 
 def retrieveTree(i):
     listOfTrees =[{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}},

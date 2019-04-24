@@ -313,7 +313,7 @@ def innerLK(i, oS):
         oS.alphas[j] -= oS.labelMat[j]*(Ei - Ej)/eta
         oS.alphas[j] = clipAlpha(oS.alphas[j],H,L)
         updateEk(oS, j) #added this for the Ecache
-        if (abs(oS.alphas[j] - alphaJold) < 0.00001): print "j not moving enough"; return 0
+        if (abs(oS.alphas[j] - alphaJold) < 0.00001): print("j not moving enough"); return 0
         oS.alphas[i] += oS.labelMat[j]*oS.labelMat[i]*(alphaJold - oS.alphas[j])#update i by the same amount as j
         updateEk(oS, i) #added this for the Ecache                    #the update is in the oppostie direction
         b1 = oS.b - Ei- oS.labelMat[i]*(oS.alphas[i]-alphaIold)*oS.X[i,:]*oS.X[i,:].T - oS.labelMat[j]*(oS.alphas[j]-alphaJold)*oS.X[i,:]*oS.X[j,:].T
