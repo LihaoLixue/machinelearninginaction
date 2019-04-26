@@ -21,16 +21,19 @@ def getNumLeafs(myTree):
         else:
             numLeafs +=1
     return numLeafs
+
 #计算该树有多少层
 def getTreeDepth(myTree):
     maxDepth = 0
-    firstStr = myTree.keys()[0]
+    firstStr = list(myTree.keys())[0]
     secondDict = myTree[firstStr]
     for key in secondDict.keys():
         if type(secondDict[key]).__name__=='dict':#test to see if the nodes are dictonaires, if not they are leaf nodes
             thisDepth = 1 + getTreeDepth(secondDict[key])
-        else:   thisDepth = 1
-        if thisDepth > maxDepth: maxDepth = thisDepth
+        else:
+            thisDepth = 1
+        if thisDepth > maxDepth:
+            maxDepth = thisDepth
     return maxDepth
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
@@ -46,7 +49,7 @@ def plotMidText(cntrPt, parentPt, txtString):
 def plotTree(myTree, parentPt, nodeTxt):#if the first key tells you what feat was split on
     numLeafs = getNumLeafs(myTree)  #this determines the x width of this tree
     depth = getTreeDepth(myTree)
-    firstStr = myTree.keys()[0]     #the text label for this node should be this
+    firstStr = list(myTree.keys())[0]     #the text label for this node should be this
     cntrPt = (plotTree.xOff + (1.0 + float(numLeafs))/2.0/plotTree.totalW, plotTree.yOff)
     plotMidText(cntrPt, parentPt, nodeTxt)
     plotNode(firstStr, cntrPt, parentPt, decisionNode)
@@ -70,17 +73,18 @@ def createPlot(inTree):
     #createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses 
     plotTree.totalW = float(getNumLeafs(inTree))
     plotTree.totalD = float(getTreeDepth(inTree))
-    plotTree.xOff = -0.5/plotTree.totalW; plotTree.yOff = 1.0;
+    plotTree.xOff = -0.5/plotTree.totalW;
+    plotTree.yOff = 1.0;
     plotTree(inTree, (0.5,1.0), '')
     plt.show()
 
-def createPlot():
-   fig = plt.figure(1, facecolor='white')
-   fig.clf()
-   createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses
-   plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
-   plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
-   plt.show()
+# def createPlot():
+#    fig = plt.figure(1, facecolor='white')
+#    fig.clf()
+#    createPlot.ax1 = plt.subplot(111, frameon=False) #ticks for demo puropses
+#    plotNode('a decision node', (0.5, 0.1), (0.1, 0.5), decisionNode)
+#    plotNode('a leaf node', (0.8, 0.1), (0.3, 0.8), leafNode)
+#    plt.show()
 
 def retrieveTree(i):
     listOfTrees =[{'no surfacing': {0: 'no', 1: {'flippers': {0: 'no', 1: 'yes'}}}},
