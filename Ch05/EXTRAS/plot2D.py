@@ -7,7 +7,7 @@ from numpy import *
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
-import logRegres
+from Ch05 import logRegres
 
 dataMat,labelMat=logRegres.loadDataSet()
 dataArr = array(dataMat)

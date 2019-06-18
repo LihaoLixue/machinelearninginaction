@@ -2,43 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806f74ae-4d4f-48a4-af7a-f11c5d1284b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch02/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch03/MainDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch03/matplotlib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch03/matplotlib/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch03/matplotlib/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch11/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kinship/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kinship/data/scv/sample_submission.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kinship/data/scv/train_relationships.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kinship/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/sur-age.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/sur-emback.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/sur-pclass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/sur-sex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/treePlotter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle/trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ch02/KNN学习记录.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ch02/Main_lih.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ch05/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ch05/kNN_lih.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/kNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/kNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch02/README.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch02/kNN_lih.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/kNN_lih.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch02/test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch02/test7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch02/test8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ch02/test9.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/titanic/gender_submission.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/titanic/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle/titanic/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/titanic/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle/titanic/train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/treePlotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch03/treePlotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch03/trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch03/trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch11/apriori.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch11/apriori.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch05/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch05/testSet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/testSet.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ch02/kNN_lih.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
+            <state relative-caret-position="587">
+              <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-end-line="192" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -74,11 +51,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch05/kNN_lih.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
+            <state relative-caret-position="266">
+              <caret line="202" column="17" lean-forward="true" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch02/Main_lih.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+              <folding>
+                <element signature="e#47#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch05/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch05/LR_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-302">
+              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -87,52 +115,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/kNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="e#384#403#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/Main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/datingTestSet.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/sigmoid.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <entry file="file://$PROJECT_DIR$/Ch05/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -165,11 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyTestWork/test.py" />
-        <option value="$PROJECT_DIR$/MyTestWork/test1.py" />
-        <option value="$PROJECT_DIR$/MyTestWork/test3.py" />
-        <option value="$PROJECT_DIR$/Ch02/wuenda/find_closet.py" />
-        <option value="$PROJECT_DIR$/Ch02/wuenda/yasuo.py" />
         <option value="$PROJECT_DIR$/Ch02/wuenda/Main.py" />
         <option value="$PROJECT_DIR$/Ch02/wuenda/PCA.py" />
         <option value="$PROJECT_DIR$/kNNMain.py" />
@@ -177,8 +159,6 @@
         <option value="$PROJECT_DIR$/Ch07/old_adaboost.py" />
         <option value="$PROJECT_DIR$/Ch04/bayes.py" />
         <option value="$PROJECT_DIR$/Ch04/Main.py" />
-        <option value="$PROJECT_DIR$/Ch05/Main.py" />
-        <option value="$PROJECT_DIR$/Ch05/LR_demo.py" />
         <option value="$PROJECT_DIR$/Ch06/svmMLiA.py" />
         <option value="$PROJECT_DIR$/Ch03/treetest.py" />
         <option value="$PROJECT_DIR$/Ch03/lenses.txt" />
@@ -205,21 +185,30 @@
         <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py" />
         <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/methods/votes.py" />
         <option value="$PROJECT_DIR$/Ch11/apriori.py" />
+        <option value="$PROJECT_DIR$/Ch02/Readme.md" />
+        <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo2.py" />
+        <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py" />
+        <option value="$PROJECT_DIR$/Ch02/kNN.py" />
+        <option value="$PROJECT_DIR$/Ch02/Main.py" />
+        <option value="$PROJECT_DIR$/Ch02/KNN学习记录.md" />
+        <option value="$PROJECT_DIR$/Ch05/LR_demo.py" />
+        <option value="$PROJECT_DIR$/Ch05/demo.py" />
         <option value="$PROJECT_DIR$/Ch02/test6.py" />
         <option value="$PROJECT_DIR$/Ch02/test7.py" />
         <option value="$PROJECT_DIR$/Ch02/test8.py" />
         <option value="$PROJECT_DIR$/Ch02/test9.py" />
+        <option value="$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py" />
+        <option value="$PROJECT_DIR$/Ch05/Readme.md" />
+        <option value="$PROJECT_DIR$/Ch02/Main_lih.py" />
+        <option value="$PROJECT_DIR$/Ch05/Main.py" />
+        <option value="$PROJECT_DIR$/Ch05/kNN_lih.py" />
         <option value="$PROJECT_DIR$/Ch02/kNN_lih.py" />
-        <option value="$PROJECT_DIR$/Ch02/Readme.md" />
-        <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo2.py" />
-        <option value="$PROJECT_DIR$/Ch02/kNN.py" />
-        <option value="$PROJECT_DIR$/Ch02/Main.py" />
-        <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="205" />
+    <option name="y" value="547" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -228,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,30 +238,31 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kaggle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ch05" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ch05" />
+      <recent name="$PROJECT_DIR$/kaggle" />
+      <recent name="$PROJECT_DIR$/Ch03" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="D:\WorkerCode\machinelearninginaction\Ch02" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Kinship/data/scv" />
       <recent name="$PROJECT_DIR$/Kinship/data" />
       <recent name="$PROJECT_DIR$/Kinship/image" />
       <recent name="$PROJECT_DIR$/Ch03" />
-      <recent name="D:\WorkerCode\machinelearninginaction\Ch02\wuenda" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/kaggle" />
-      <recent name="$PROJECT_DIR$/Ch03" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="D:\WorkerCode\machinelearninginaction\Ch02" />
       <recent name="D:\WorkerCode\machinelearninginaction\Ch02\wuenda" />
     </key>
   </component>
@@ -289,29 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main (1)">
-    <configuration name="KNeighborsClassifier_Demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearninginaction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch02" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.kNN_lih">
     <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearninginaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -334,7 +301,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="apriori" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearninginaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,12 +309,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch11/apriori.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch05/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,7 +323,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Main_lih" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearninginaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -364,12 +331,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch11/demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch02/Main_lih.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kNN_lih (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearninginaction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch05" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch05/kNN_lih.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,19 +390,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.apriori" />
-      <item itemvalue="Python.demo (2)" />
       <item itemvalue="Python.Main (1)" />
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.Main_lih" />
+      <item itemvalue="Python.kNN_lih (1)" />
       <item itemvalue="Python.kNN_lih" />
-      <item itemvalue="Python.KNeighborsClassifier_Demo1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main (1)" />
-        <item itemvalue="Python.KNeighborsClassifier_Demo1" />
         <item itemvalue="Python.kNN_lih" />
-        <item itemvalue="Python.demo (2)" />
-        <item itemvalue="Python.apriori" />
+        <item itemvalue="Python.kNN_lih (1)" />
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Main_lih" />
+        <item itemvalue="Python.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -435,37 +424,38 @@
       <workItem from="1559566740977" duration="1182000" />
       <workItem from="1559647613668" duration="1879000" />
       <workItem from="1559723303835" duration="17030000" />
-      <workItem from="1560774055331" duration="6695000" />
+      <workItem from="1560774055331" duration="7644000" />
+      <workItem from="1560825794773" duration="7157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86849000" />
+    <option name="totallyTimeSpent" value="94955000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10383387" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.092651755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3280255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3014862" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35881105" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10840932" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29280648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3280255" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.44585988" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37588653" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.29899856" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.2550586" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -705,6 +695,11 @@
           <line>74</line>
           <option name="timeStamp" value="137" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ch05/Main.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="django-exception">
@@ -734,18 +729,20 @@
     <SUITE FILE_PATH="coverage/machinelearninginaction$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1559568203209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$treetest.coverage" NAME="treetest Coverage Results" MODIFIED="1556104518167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1557748402769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
-    <SUITE FILE_PATH="coverage/machinelearninginaction$kNN_lih.coverage" NAME="kNN_lih Coverage Results" MODIFIED="1560775238088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$KNeighborsClassifier_Demo1.coverage" NAME="KNeighborsClassifier_Demo1 Coverage Results" MODIFIED="1560824336402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$kNN_lih.coverage" NAME="kNN_lih Coverage Results" MODIFIED="1560839293988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$testdemo.coverage" NAME="testdemo Coverage Results" MODIFIED="1557490131554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$Main__2_.coverage" NAME="Main (2) Coverage Results" MODIFIED="1556188514965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$demoone.coverage" NAME="demoone Coverage Results" MODIFIED="1556369567079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$sur_emback.coverage" NAME="sur-emback Coverage Results" MODIFIED="1557760232945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$demo__2_.coverage" NAME="demo (2) Coverage Results" MODIFIED="1559789069678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch11" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$Main_lih.coverage" NAME="Main_lih Coverage Results" MODIFIED="1560836887872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$demo.coverage" NAME="demo Coverage Results" MODIFIED="1558010641271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Kinship" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$train.coverage" NAME="train Coverage Results" MODIFIED="1557747429747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
-    <SUITE FILE_PATH="coverage/machinelearninginaction$Main.coverage" NAME="Main Coverage Results" MODIFIED="1559565054108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
-    <SUITE FILE_PATH="coverage/machinelearninginaction$Main__1_.coverage" NAME="Main (1) Coverage Results" MODIFIED="1560824361081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$Main__1_.coverage" NAME="Main (1) Coverage Results" MODIFIED="1560825094162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$Main.coverage" NAME="Main Coverage Results" MODIFIED="1560836952760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch05" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$sur_age.coverage" NAME="sur-age Coverage Results" MODIFIED="1557758730123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$kNN_lih__1_.coverage" NAME="kNN_lih (1) Coverage Results" MODIFIED="1560837400677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch05" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$sur_sex.coverage" NAME="sur-sex Coverage Results" MODIFIED="1557759580640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
   </component>
   <component name="debuggerHistoryManager">
@@ -798,100 +795,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kaggle/sur-sex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle/myplot.jpg" />
-    <entry file="file://$PROJECT_DIR$/kaggle/titanic/abc.csv" />
-    <entry file="file://$PROJECT_DIR$/kaggle/titanic/test.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch03/lenses.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch03/classifierStorage.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle/titanic/train.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#16#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch03/MainDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch03/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch11/recent100bills.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1000,52 +903,10 @@
     <entry file="file://$PROJECT_DIR$/Ch02/horseColicTest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="4" selection-start-column="2" selection-end-line="66" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="33" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/test4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/sigmoid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1059,34 +920,10 @@
     <entry file="file://$PROJECT_DIR$/Ch02/digits_model.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-414714125/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1109,20 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/neighbors/classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="166" column="32" lean-forward="true" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/datingTestSet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/datingTestSet2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1130,52 +953,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/kNN.py">
+    <entry file="file://$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo2.py" />
+    <entry file="file://$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="623">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
           <folding>
-            <element signature="e#384#403#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/datingTestSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/KNN学习记录.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="338">
+            <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/sigmoid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="330">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo2.py">
+    <entry file="file://$PROJECT_DIR$/Ch02/kNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="565">
+          <caret line="127" column="57" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="57" />
+          <folding>
+            <element signature="e#384#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/neighbors/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/testSet.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/testSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-end-line="69" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-end-line="66" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="38" lean-forward="true" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plotGD.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="e#47#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/Main_lih.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/LR_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/kNN_lih.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="202" column="17" lean-forward="true" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/kNN_lih.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
+        <state relative-caret-position="587">
+          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-end-line="192" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

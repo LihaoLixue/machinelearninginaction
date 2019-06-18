@@ -1,11 +1,13 @@
 from matplotlib.font_manager import FontProperties
 from numpy import *
 import numpy as np
+import operator
+from os import listdir
 import matplotlib.pyplot as plt
 
 
 def loadDataSet():
-    dataMat = []
+    dataMat = [];
     labelMat = []
     fr = open('testSet.txt')
     for line in fr.readlines():
@@ -19,10 +21,11 @@ def sigmoid(inX):
     return 1.0 / (1 + exp(-inX))
 
 
-#梯度上升法
 def gradAscent(dataMatIn, classLabels):
     dataMatrix = mat(dataMatIn)  # convert to NumPy matrix
     labelMat = mat(classLabels).transpose()  # convert to NumPy matrix
+    # ** 随机梯# ** 随机梯度上升算法 **度上升算法 **
+    # stocGradAscent0(array(dataMatrix),labelMat)
     m, n = shape(dataMatrix)
     alpha = 0.001
     maxCycles = 500  # 迭代次数
@@ -88,7 +91,6 @@ def plotBestFit(weights):  # 此处weights即为上面求出的[w0,w1,w2]
     plt.show()
 
 
-# 随机梯度上升法
 def stocGradAscent0(dataMatrix, classLabels):
     m, n = shape(dataMatrix)
     alpha = 0.01
@@ -101,7 +103,7 @@ def stocGradAscent0(dataMatrix, classLabels):
 
 
 # 改进的随机梯度上升算法
-def stocGradAscent1(dataMatrix, classLabels, numIter=300):
+def stocGradAscent1(dataMatrix, classLabels, numIter=150):
     m, n = shape(dataMatrix)
     weights = ones(n)  # initialize to all ones
     weights_array = np.array([])
@@ -116,39 +118,6 @@ def stocGradAscent1(dataMatrix, classLabels, numIter=300):
             weights_array = np.append(weights_array, weights, axis=0)
             del (dataIndex[randIndex])
     return weights,weights_array.reshape(-1,3)
-
-def stocGradAscent2(dataMatrix, classLabels, numIter=150):
-    # 返回dataMatrix的大小。m为行数,n为列数。
-    m,n = np.shape(dataMatrix)
-    # 参数初始化
-    weights = np.ones(n)
-    # 存储每次更新的回归系数
-    weights_array = np.array([])
-    for j in range(numIter):
-        dataIndex = list(range(m))
-        for i in range(m):
-            # 降低alpha的大小，每次减小1/(j+i)。
-            # 相比如前面所做的改变：Alpha在每一次迭代中，都进行了改变
-            alpha = 4/(1.0+j+i)+0.01
-            # 随机选取样本
-            # 这里也是做出的改变：是随机的选择样本，而不是遍历所有的样本
-            randIndex = int(random.uniform(0,len(dataIndex)))
-            # 随机选取的一个样本，计算h
-            # h就是代表z的含义，梯度上升矢量化公式
-            h = sigmoid(sum(dataMatrix[randIndex]*weights))
-            # 计算误差
-            error = classLabels[randIndex] - h
-            # 更新回归系数
-            weights = weights + alpha * error * dataMatrix[randIndex]
-            # 添加回归系数到数组当中去
-            weights_array = np.append(weights_array, weights, axis=0)
-            # 将已经使用过得样本进行删除
-            del(dataIndex[randIndex])
-    # 改变维度
-    weights_array = weights_array.reshape(numIter * m, n)
-    # 返回权重
-    return weights, weights_array
-
 
 
 def classifyVector(inX, weights):
@@ -193,13 +162,11 @@ def multiTest():  # 调用colicTest()10次并求平均值
     for k in list(range(numTests)):
         errorSum += colicTest()
     print("after %d iterations the average error rate is: %f" % (numTests, errorSum / float(numTests)))
-def getChineseFont():
-    return FontProperties(fname='/System/Library/Fonts/PingFang.ttc')
+
 
 def plotWeights(weights_array1,weights_array2):
     #设置汉字格式
-    font = getChineseFont()
-    # font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
+    font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
     #将fig画布分隔成1行1列,不共享x轴和y轴,fig画布的大小为(13,8)
     #当nrow=3,nclos=2时,代表fig画布被分为六个区域,axs[0][0]表示第一行第一列
     fig, axs = plt.subplots(nrows=3, ncols=2,sharex=False, sharey=False, figsize=(20,10))
@@ -217,7 +184,7 @@ def plotWeights(weights_array1,weights_array2):
     #绘制w2与迭代次数的关系
     axs[2][0].plot(x1,weights_array1[:,2])
     axs2_xlabel_text = axs[2][0].set_xlabel(u'迭代次数',FontProperties=font)
-    axs2_ylabel_text = axs[2][0].set_ylabel(u'W2',FontProperties=font)
+    axs2_ylabel_text = axs[2][0].set_ylabel(u'W1',FontProperties=font)
     plt.setp(axs2_xlabel_text, size=20, weight='bold', color='black')
     plt.setp(axs2_ylabel_text, size=20, weight='bold', color='black')
 
@@ -236,7 +203,7 @@ def plotWeights(weights_array1,weights_array2):
     #绘制w2与迭代次数的关系
     axs[2][1].plot(x2,weights_array2[:,2])
     axs2_xlabel_text = axs[2][1].set_xlabel(u'迭代次数',FontProperties=font)
-    axs2_ylabel_text = axs[2][1].set_ylabel(u'W2',FontProperties=font)
+    axs2_ylabel_text = axs[2][1].set_ylabel(u'W1',FontProperties=font)
     plt.setp(axs2_xlabel_text, size=20, weight='bold', color='black')
     plt.setp(axs2_ylabel_text, size=20, weight='bold', color='black')
 
@@ -246,10 +213,10 @@ if __name__ == '__main__':
     # plotDataSet()
     dataMat, labelMat = loadDataSet()
     # d = gradAscent(a, b)
-    weights1, weights_array1 = stocGradAscent2(np.array(dataMat), labelMat)
+    weights1, weights_array1 = stocGradAscent1(np.array(dataMat), labelMat)
 
     weights2, weights_array2 = gradAscent(dataMat, labelMat)
-    plotWeights(weights_array1, weights_array2)
+    plotWeights(weights_array1, weights_array1)
     # plotWeights(dataMat, weights_array2)
 
 
