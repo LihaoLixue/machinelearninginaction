@@ -2,7 +2,7 @@ from Ch11 import apriori
 
 # a = apriori.loadDataSet()
 # b, c = apriori.apriori(a)
-# rules = apriori.generateRules(b, c, minConf=0.7)
+# rules = apriori.generateRules(b, c, minConf=0.5)
 # print(rules)
 e, f = apriori.getActionIds()
 print(e)

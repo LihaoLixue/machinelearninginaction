@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806f74ae-4d4f-48a4-af7a-f11c5d1284b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ch02/KNN学习记录.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch02/Main_lih.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch05/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ch05/kNN_lih.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/kNN_lih.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/kNN_lih.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/test7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/test8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch02/test9.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch02/test9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch05/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ch05/testSet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Ch05/testSet.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch11/apriori.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch11/apriori.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ch11/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ch11/demo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,65 +28,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch02/test7.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch11/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ch11/apriori.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
+              <folding>
+                <element signature="e#58#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ch02/kNN_lih.py">
+        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-end-line="192" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="267">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch05/kNN_lih.py">
+        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/urllib/request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="202" column="17" lean-forward="true" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
+            <state relative-caret-position="189">
+              <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch02/Main_lih.py">
+        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/build/lib/votesmart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding>
-                <element signature="e#47#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ch05/Main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -105,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ch05/LR_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
-              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="525">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -143,7 +129,10 @@
       <find>urlopen</find>
       <find>HTTPError</find>
       <find>urlencode</find>
+      <find>votes</find>
       <find>getBill</find>
+      <find>urllib.urlencode</find>
+      <find>ssCnt.has_key</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,11 +169,7 @@
         <option value="$PROJECT_DIR$/Ch03/MainDemo.py" />
         <option value="$PROJECT_DIR$/Ch03/treePlotter.py" />
         <option value="$PROJECT_DIR$/kaggle/demo.py" />
-        <option value="$PROJECT_DIR$/Ch11/demo.py" />
-        <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/setup.py" />
-        <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py" />
         <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/methods/votes.py" />
-        <option value="$PROJECT_DIR$/Ch11/apriori.py" />
         <option value="$PROJECT_DIR$/Ch02/Readme.md" />
         <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo2.py" />
         <option value="$PROJECT_DIR$/Ch02/KNeighborsClassifier_Demo1.py" />
@@ -203,12 +188,16 @@
         <option value="$PROJECT_DIR$/Ch05/Main.py" />
         <option value="$PROJECT_DIR$/Ch05/kNN_lih.py" />
         <option value="$PROJECT_DIR$/Ch02/kNN_lih.py" />
+        <option value="$PROJECT_DIR$/Ch11/demo.py" />
+        <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/setup.py" />
+        <option value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py" />
+        <option value="$PROJECT_DIR$/Ch11/apriori.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="205" />
-    <option name="y" value="547" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="49" />
+    <option name="y" value="60" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -217,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,43 +217,72 @@
             <path>
               <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearninginaction" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch02" type="462c0819:PsiDirectoryNode" />
+              <item name="Ch11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machinelearninginaction" type="462c0819:PsiDirectoryNode" />
-              <item name="Ch05" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (tensorflow) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (tensorflow) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python3.5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (tensorflow) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python3.5" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (tensorflow) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machinelearninginaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (tensorflow) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="votesmart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ch05" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Ch05" />
-      <recent name="$PROJECT_DIR$/kaggle" />
-      <recent name="$PROJECT_DIR$/Ch03" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="D:\WorkerCode\machinelearninginaction\Ch02" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Kinship/data/scv" />
       <recent name="$PROJECT_DIR$/Kinship/data" />
       <recent name="$PROJECT_DIR$/Kinship/image" />
       <recent name="$PROJECT_DIR$/Ch03" />
       <recent name="D:\WorkerCode\machinelearninginaction\Ch02\wuenda" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart" />
+      <recent name="$PROJECT_DIR$/Ch05" />
+      <recent name="$PROJECT_DIR$/kaggle" />
+      <recent name="$PROJECT_DIR$/Ch03" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,29 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kNN_lih">
-    <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearninginaction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch02" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch02/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.demo">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearninginaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -323,7 +320,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main_lih" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="apriori" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearninginaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -331,12 +328,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch11" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch02/Main_lih.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch11/apriori.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearninginaction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ch11" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ch11/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,19 +409,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Main (1)" />
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.Main_lih" />
       <item itemvalue="Python.kNN_lih (1)" />
       <item itemvalue="Python.kNN_lih" />
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.apriori" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.apriori" />
         <item itemvalue="Python.kNN_lih" />
         <item itemvalue="Python.kNN_lih (1)" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.Main_lih" />
-        <item itemvalue="Python.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -425,37 +444,39 @@
       <workItem from="1559647613668" duration="1879000" />
       <workItem from="1559723303835" duration="17030000" />
       <workItem from="1560774055331" duration="7644000" />
-      <workItem from="1560825794773" duration="7157000" />
+      <workItem from="1560825794773" duration="7295000" />
+      <workItem from="1560906670293" duration="428000" />
+      <workItem from="1560992580768" duration="10520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94955000" />
+    <option name="totallyTimeSpent" value="106041000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="49" y="60" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.092651755" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20394036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3280255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10840932" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29280648" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36942676" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3556263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3280255" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37588653" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2983015" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.2550586" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.2550586" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -547,63 +568,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Ch11/demo.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/demo.py</url>
           <line>4</line>
           <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Ch11/apriori.py</url>
@@ -634,16 +600,6 @@
           <url>file://$PROJECT_DIR$/Ch11/demo.py</url>
           <line>6</line>
           <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py</url>
-          <line>562</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py</url>
-          <line>560</line>
-          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Ch02/Main.py</url>
@@ -700,6 +656,21 @@
           <line>4</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py</url>
+          <line>209</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py</url>
+          <line>210</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="django-exception">
@@ -721,7 +692,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/machinelearninginaction$apriori.coverage" NAME="apriori Coverage Results" MODIFIED="1559789036936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch11" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$apriori.coverage" NAME="apriori Coverage Results" MODIFIED="1561008560389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch11" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$treePlotter.coverage" NAME="treePlotter Coverage Results" MODIFIED="1556105200610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$sur_pclass.coverage" NAME="sur-pclass Coverage Results" MODIFIED="1557756647042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$test.coverage" NAME="test Coverage Results" MODIFIED="1557734186813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03/matplotlib" />
@@ -737,7 +708,7 @@
     <SUITE FILE_PATH="coverage/machinelearninginaction$sur_emback.coverage" NAME="sur-emback Coverage Results" MODIFIED="1557760232945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$demo__2_.coverage" NAME="demo (2) Coverage Results" MODIFIED="1559789069678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch11" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$Main_lih.coverage" NAME="Main_lih Coverage Results" MODIFIED="1560836887872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
-    <SUITE FILE_PATH="coverage/machinelearninginaction$demo.coverage" NAME="demo Coverage Results" MODIFIED="1558010641271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Kinship" />
+    <SUITE FILE_PATH="coverage/machinelearninginaction$demo.coverage" NAME="demo Coverage Results" MODIFIED="1561011182937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch11" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$train.coverage" NAME="train Coverage Results" MODIFIED="1557747429747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch03" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$Main__1_.coverage" NAME="Main (1) Coverage Results" MODIFIED="1560825094162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch02" />
     <SUITE FILE_PATH="coverage/machinelearninginaction$Main.coverage" NAME="Main Coverage Results" MODIFIED="1560836952760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ch05" />
@@ -747,6 +718,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>len(L[k - 2])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>freqSet - conseq</expression-string>
         <language-id>Python</language-id>
@@ -759,11 +735,6 @@
       </expression>
       <expression>
         <expression-string>list(Lk[i])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>len(L[k - 2])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -795,84 +766,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ch11/recent100bills.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/setup.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/methods/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="559" column="12" selection-start-line="559" selection-start-column="12" selection-end-line="559" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/build/lib/votesmart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="559" column="12" selection-start-line="559" selection-start-column="12" selection-end-line="559" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="e#247#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch11/apriori.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
-          <folding>
-            <element signature="e#58#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch11/recent20bills.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch11/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch03/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#16#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch03/treePlotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -903,13 +796,6 @@
     <entry file="file://$PROJECT_DIR$/Ch02/horseColicTest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/digits_model.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -919,13 +805,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/digits_model.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-414714125/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/wuenda/Main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -964,13 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/README.txt" />
     <entry file="file://$PROJECT_DIR$/Ch02/datingTestSet.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1049,13 +922,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/demo.py" />
     <entry file="file://$PROJECT_DIR$/Ch02/test9.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1076,51 +943,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test7.py">
+    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plotGD.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/kNN_lih.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="38" lean-forward="true" selection-end-line="54" />
+        <state relative-caret-position="224">
+          <caret line="167" column="43" lean-forward="true" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/kNN_lih.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="202" column="17" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch02/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ch02/test6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plotGD.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="e#47#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1128,6 +994,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/EXTRAS/plot2D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="e#47#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="28" selection-start-line="55" selection-end-line="56" />
         </state>
       </provider>
     </entry>
@@ -1141,37 +1024,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/logRegres.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ch05/LR_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="525">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch05/kNN_lih.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="202" column="17" lean-forward="true" selection-start-line="202" selection-start-column="17" selection-end-line="202" selection-end-column="17" />
+    <entry file="file://$PROJECT_DIR$/Ch05/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ch02/kNN_lih.py">
+    <entry file="file://$PROJECT_DIR$/Ch02/test7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-end-line="192" />
+        <state relative-caret-position="340">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-414714125/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/AUTHORS">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/distutils/dist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="258" column="33" selection-start-line="258" selection-start-column="33" selection-end-line="258" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/urllib/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/build/lib/votesmart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch11/mushroom.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch11/meaning20.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch11/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ch11/apriori.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#58#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/votesmart/votesmart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
         </state>
       </provider>
     </entry>

@@ -87,11 +87,12 @@ def generateRules(L, supportData, minConf=0.7):  # supportData is a dict coming 
 def calcConf(freqSet, H, supportData, brl, minConf=0.7):
     prunedH = []  # create new list to return
     for conseq in H:
-        conf = supportData[freqSet] / supportData[freqSet - conseq]  # calc confidence
-        if conf >= minConf:
-            print(freqSet - conseq, '-->', conseq, 'conf:', conf)
-            brl.append((freqSet - conseq, conseq, conf))
-            prunedH.append(conseq)
+        if (freqSet - conseq) != frozenset():
+            conf = supportData[freqSet] / supportData[freqSet - conseq]  # calc confidence
+            if conf >= minConf:
+             print(freqSet - conseq, '-->', conseq, 'conf:', conf)
+             brl.append((freqSet - conseq, conseq, conf))
+             prunedH.append(conseq)
     return prunedH
 
 
@@ -116,10 +117,9 @@ def pntRules(ruleList, itemMeaning):
 
 
 from time import sleep
-import urllib, urllib.request
 from votesmart import votesmart
 
-votesmart.apikey = 'a7fa40adec6f4a77178799fae4441030'
+votesmart.votesmart.apikey = '49024thereoncewasamanfromnantucket94040'
 
 
 # votesmart.apikey = 'get your api key first'
@@ -130,7 +130,7 @@ def getActionIds():
     for line in fr.readlines():
         billNum = int(line.split('\t')[0])
         try:
-            billDetail = votesmart.getBill(billNum)  # api call
+            billDetail = votesmart.votesmart.votes.getBill(billNum)  # api call
             for action in billDetail.actions:
                 if action.level == 'House' and \
                         (action.stage == 'Passage' or action.stage == 'Amendment Vote'):
