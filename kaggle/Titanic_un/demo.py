@@ -1,10 +1,7 @@
 # coding: utf-8
-import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-from kaggle import treePlotter,trees
-import random
+
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 trainData = pd.read_csv("titanic/train.csv")
 testData = pd.read_csv("titanic/test.csv")
