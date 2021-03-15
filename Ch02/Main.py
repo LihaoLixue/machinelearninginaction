@@ -2,16 +2,16 @@ from Ch02 import kNN
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-# group,labels = kNN.createDataSet()
- #kNN.classify0([0,0],group,labels,3)
+group,labels = kNN.createDataSet()
+# kNN.classify0([0,0],group,labels,3)
 
-# a,b=kNN.file2matrix("datingTestSet.txt")
-# c,d,e=kNN.autoNorm(a)
-#
-# kNN.datingClassTest()
+a,b=kNN.file2matrix("datingTestSet.txt")
+c,d,e=kNN.autoNorm(a)
+
+kNN.datingClassTest()
 
 
-# kNN.classifyPerson()
+kNN.classifyPerson()
 
 
 # fig = plt.figure()

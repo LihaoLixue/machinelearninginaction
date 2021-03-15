@@ -1,9 +1,10 @@
+#base:https://www.cnblogs.com/Neo007/p/8460052.html
 import csv
 import numpy as np
-path="C:\\Users\\wei\\Desktop\\Kaggle\\Kaggle101\\Digit Recognizer\\"
+path = "./data/"
 def readCSVFile(file):
     rawData=[]
-    trainFile=open(path+file,'rb')
+    trainFile=open(path+file,'rt')
     reader=csv.reader(trainFile)
     for line in reader:
         rawData.append(line)#42001 lines,the first line is header
@@ -46,7 +47,7 @@ def classify(inX,dataSet,labels,k):
     return sortedClassCount[0][0]
 
 def saveResult(result):
-        myFile=open(path+"result.csv",'wb')    
+        myFile=open(path+"result.csv",'w')
         myWriter=csv.writer(myFile)
         myWriter.writerow(['ImageId','Label'])
         ind=range(len(result))
@@ -59,17 +60,18 @@ def saveResult(result):
 def handwritingClassTest():
     trainData,trainLabel=loadTrainingData()
     testData=loadTestData()
-    testLabel=loadTestResult()
+    # testLabel=loadTestResult()
     m,n=np.shape(testData)
     errorCount=0
     resultList=[]
     for i in range(m):
          classifierResult = classify(testData[i], trainData, trainLabel, 5)
          resultList.append(classifierResult)
-         print "the classifier came back with: %d, the real answer is: %d" % (classifierResult, testLabel[i])
-         if (classifierResult != testLabel[i]): errorCount += 1.0
-    print "\nthe total number of errors is: %d" % errorCount
-    print "\nthe total error rate is: %f" % (errorCount/float(m))
+         # print("the classifier came back with: %d, the real answer is: %d" % (classifierResult, testLabel[i]))
+         print("the classifier came back with: %d, the real answer is:" % (classifierResult))
+         # if (classifierResult != testLabel[i]): errorCount += 1.0
+    print("\nthe total number of errors is: %d" % errorCount)
+    print("\nthe total error rate is: %f" % (errorCount/float(m)))
     saveResult(resultList)
    
 handwritingClassTest()

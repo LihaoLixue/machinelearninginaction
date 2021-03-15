@@ -1,3 +1,4 @@
+import tensorflow as tf
 import theano
 import theano.tensor as T
 import numpy as np
@@ -6,7 +7,7 @@ from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
 from theano.tensor.signal import downsample
 from theano.tensor.nnet import conv
 import pandas as pd
-path='C:\\Users\\wei\\Desktop\\Kaggle\\Kaggle101\\Digit Recognizer\\'
+path = "./data/"
 
 def shared_dataset(data_xy,borrow=True):
     """
@@ -25,7 +26,7 @@ def shared_dataset(data_xy,borrow=True):
     return shared_x,T.cast(shared_y,'int32')
 
 def load_data(path):
-    print '...loading data'
+    print('...loading data')
     train_df=DataFrame.from_csv(path+'train.csv',index_col=False).fillna(0).astype(int)
     test_df=DataFrame.from_csv(path+'test.csv',index_col=False).fillna(0).astype(int)
     if debug_mode==False:
@@ -63,13 +64,13 @@ class LogisticRegression(object):
         """
         :type input: theano.tensor.TensorType
         :param input: symbolic variable that describes the input of the architecture(one minibatch)
-        
+
         :type n_in: int
         :param n_in: number of input units,data dimension.
-        
+
         :type n_out: int
         :param n_out: number of output units,label dimension.
-        
+
         :type p_drop_logistic:float
         :param p_drop_logistic: add some noise by dropout by this probability
         """
@@ -79,13 +80,13 @@ class LogisticRegression(object):
         self.p_y_given_x=T.nnet.softmax(T.dot(input,self.W)+self.b)
         self.y_pred=T.argmax(self.p_y_given_x,axis=1)
         self.params=[self.W,self.b]
-        
+
     def negative_log_likelihood(self,y):
         """
         The cost function of multi-class logistic regression
         :type y:theano.tensor.TensorType
         :param y: corresponds to a vector that gives for each example the correct label
-        
+
         """
         # y.shape[0] is (symbolically) the number of rows in y, i.e.,
         # number of examples (call it n) in the minibatch
@@ -111,20 +112,20 @@ class LogisticRegression(object):
             return T.mean(T.neq(self.y_pred,y))
         else:
             raise NotImplementedError()
-        
+
     def predict(self):
         return self.y_pred
-        
+
 ########################################
 #  The Hidden Layer (Perceptron) Class #
 ########################################
 class HiddenLayer(object):
     def __init__(self,rng,input,n_in,n_out,W=None,b=None,activation=T.tanh,p_drop_perceptron=0.2):
         """
-        Typical hidden layer of a MLP:units are fully-connected and have 
+        Typical hidden layer of a MLP:units are fully-connected and have
         tanh activation function.Weight matrix W is of shape (n_in,n_out),
         the bias vector b is of shape(n_out)
-        
+
         :type rng: numpy.random.RandomState
         :param rng: a random number generator used to initialize weights
 
@@ -139,7 +140,7 @@ class HiddenLayer(object):
 
         :type activation: theano.Op or function
         :param activation: Non linearity to be applied in the hidden layer
-        
+
         :type p_drop_perceptron:float
         :param p_drop_perceptron: add some noise by dropout by this probability
         """
@@ -157,10 +158,10 @@ class HiddenLayer(object):
         self.W=W
         self.b=b
         lin_output=T.dot(input,self.W)+self.b
-        self.output=(lin_output if activation is None else activation(lin_output))    
-        self.params=[self.W,self.b] 
-        
-    
+        self.output=(lin_output if activation is None else activation(lin_output))
+        self.params=[self.W,self.b]
+
+
 ##################################
 #  The LeNet Conv&Pooling Layer  #
 ##################################
@@ -172,18 +173,18 @@ class LeNetConvPoolLayer(object):
         """
         :type rng: numpy.random.RandomState
         :param rng: a random number generator used to initialize weights
-        
+
         :type input:theano.tensor.dtensor4
         :param input: symbolic image tensor,of shape image_shape
-        
+
         :type filter_shape: tuple or list of length 4
         :param filter_shape: (number of filters, num input feature maps,
                               filter height,filter width)
-        
+
         :type image_shape:tuple or list of length 4
         :param image_shape: (batch size,num input feature maps(maps from different channels),
                              image height, image width)
-        
+
         :type poolsize:tuple or list of length 2
         :param poolsize: the downsampling(pooling) factor(#rows,#cols)
         """
@@ -204,30 +205,30 @@ class LeNetConvPoolLayer(object):
         #the bias is a 1D tensor-- one bias per output feature map
         b_values=np.zeros((filter_shape[0],),dtype=theano.config.floatX)
         self.b=theano.shared(value=b_values,borrow=True)
-        
+
         #convolve input feature maps with filters
         conv_out=conv.conv2d(input=input,filters=self.W,filter_shape=filter_shape,image_shape=image_shape)
-                             
+
         #pooling each feature map individually,using maxpooling
         pooled_out=downsample.max_pool_2d(input=conv_out,ds=poolsize,ignore_border=True)
-        
-        #add the bias term.Since the bias is a vector (1D array),we first 
+
+        #add the bias term.Since the bias is a vector (1D array),we first
         #reshape it to a tensor of shape(1,n_filters,1,1).Each bias will thus
         #be broadcasted across mini-batches and feature map width& height
         self.output=T.tanh(pooled_out+self.b.dimshuffle('x',0,'x','x'))
-        
+
         #store parameters of this layer
         self.params=[self.W,self.b]
-        
+
     def return_output():
         return self.output
-        
+
 #######################
 #  Construct LetNet5  #
 #######################
 def train_lenet():
     learning_rate=0.001
-    #if not using RMSprop learn_rate=0.1 
+    #if not using RMSprop learn_rate=0.1
     #if using RMSprop learn_rate=0.001
     nkerns=[20,50]
     batch_size=500
@@ -235,13 +236,13 @@ def train_lenet():
     :type nkerns:list of ints
     :param nkerns: nkerns[0] is the number of feature maps after 1 LeCovPoollayer
                    nkerns[1] is the number of feature maps after 2 LeCovPoolllayer
-    """  
+    """
     rng=np.random.RandomState(1234567890)
     datasets=load_data(path)
     train_set_x,train_set_y=datasets[0]
     valid_set_x,valid_set_y=datasets[1]
     test_set_x=datasets[2]
-   
+
     #compute number of minibatches
     n_train_batches=train_set_x.get_value(borrow=True).shape[0]
     n_valid_batches=valid_set_x.get_value(borrow=True).shape[0]
@@ -249,25 +250,25 @@ def train_lenet():
     n_train_batches/=batch_size
     n_valid_batches/=batch_size
     n_test_batches/=batch_size
-    
+
     #allocat symbolic variables for the data
     index=T.lscalar() #index to minibatch
     x=T.matrix('x') #image
-    y=T.ivector('y') #labels  
+    y=T.ivector('y') #labels
     ishape=(28,28) #MNIST image size
     p_drop_cov=0.2
     p_drop_perceptron=0.2
     p_drop_logistic=0.2 #probablities of drop-out to prevent overfitting
-    
+
     #########################
-    # Building actual model # 
+    # Building actual model #
     #########################
-    print '...building the model'
-    
+    print('...building the model')
+
     #reshape matrix of images of shape (batch_size,28,28)
     #to a 4D tensor, compatible with our LeNetConvPoolLayer
     layer0_input=x.reshape((batch_size,1,28,28)) #batch_size* 1 channel* (28*28)size
-    
+
     #Construct the first convolutional pooling layer:
     #filtering reduces the image size to (28-5+1,28-5+1)=(24,24)
     #maxpooling reduces this further to (24/2,24/2)=(12,12)
@@ -275,7 +276,7 @@ def train_lenet():
     layer0=LeNetConvPoolLayer(rng,input=layer0_input,
                                image_shape=(batch_size,1,28,28),
                                filter_shape=(nkerns[0],1,5,5),poolsize=(2,2),p_drop_cov=p_drop_cov)
-    
+
     # Construct the second convolutional pooling layer:
     # filtering reduces the image size to (12-5+1,12-5+1)=(8,8)
     # maxpooling reduces this further to (8/2,8/2) = (4,4)
@@ -283,30 +284,30 @@ def train_lenet():
     layer1 = LeNetConvPoolLayer(rng, input=layer0.output,
             image_shape=(batch_size, nkerns[0], 12, 12),
             filter_shape=(nkerns[1], nkerns[0], 5, 5), poolsize=(2, 2),p_drop_cov=p_drop_cov)
-    
+
     #the HiddenLayer being fully-connected,it operates on 2D matrices shape
     #(batch_size,num_pixels)
     #This will generate a matrix of shape (batch_size,nkerns[1]*4*4)=(500,800)
     layer2_input=layer1.output.flatten(2)
-    
+
     #construct a fully-connected perceptron layer
     layer2=HiddenLayer(rng,input=layer2_input,n_in=nkerns[1]*4*4,n_out=500,activation=T.tanh,p_drop_perceptron=p_drop_perceptron)
-    
+
     #classify the values of the fully connected softmax layer
     layer3=LogisticRegression(input=layer2.output,n_in=500,n_out=10,p_drop_logistic=p_drop_logistic)
-    
+
     #the cost we minimize during training
     cost=layer3.negative_log_likelihood(y)
-    
+
     #create a function to compute the error rate on validation set
     validate_model=theano.function([index],layer3.errors(y),
                 givens={x:valid_set_x[index*batch_size:(index+1)*batch_size],
                         y:valid_set_y[index*batch_size:(index+1)*batch_size]})
-    
+
     #create a list of gradients for all model parameters
     params=layer3.params+layer2.params+layer1.params+layer0.params
     grads=T.grad(cost,params)
-    
+
     #using RMSprop(scaling the gradient based on running average)
     #to update the parameters of the model as a list of (variable,update expression) pairs
     def RMSprop(gparams,params,learning_rate,rho=0.9,epsilon=1e-6):
@@ -322,27 +323,27 @@ def train_lenet():
             updates.append((acc,acc_new))
             updates.append((p,p-learning_rate*g))
         return updates
-                            
+
     #iterate to get the optimal solution using minibatch SGD
     #updates=[]
     #for param,grad in zip(params,grads):
         #updates.append((param,param-learning_rate*grad))
-    
+
     train_model=theano.function([index],cost,updates=RMSprop(grads,params,learning_rate),
                 givens={ x:train_set_x[index* batch_size:(index+1)*batch_size],
                          y:train_set_y[index* batch_size:(index+1)*batch_size]
-                         }) 
-    
+                         })
+
     #########################
-    # Training the  model   # 
-    ######################### 
+    # Training the  model   #
+    #########################
     n_epochs=100
-    print '...training'
+    print('...training')
     # early-stopping parameters
     patience = 10000  # look as this many examples regardless
     patience_increase = 2  # wait this much longer when a new best is
                             # found
-    
+
     #improvement_threshold = 0.995  # a relative improvement of this much is
                                     # considered significant
     # if have added drop-out noise,we can increase the value
@@ -352,43 +353,43 @@ def train_lenet():
                                     # minibatche before checking the network
                                     # on the validation set; in this case we
                                     # check every epoch
-    
+
     best_validation_loss = np.inf
     best_iter = 0
-    
+
     epoch = 0
     done_looping = False
-    
+
     while (epoch < n_epochs) and (not done_looping):
         epoch = epoch + 1
-        for minibatch_index in xrange(n_train_batches):
-    
+        for minibatch_index in list(range(n_train_batches)):
+
             iter = (epoch - 1) * n_train_batches + minibatch_index
-    
+
             if iter % 100 == 0:
-                print 'training @ iter = ', iter
+                print('training @ iter = ', iter)
             cost_ij = train_model(minibatch_index)
-    
+
             if (iter + 1) % validation_frequency == 0:
-    
+
                 # compute zero-one loss on validation set
                 validation_losses = [validate_model(i) for i
-                                        in xrange(n_valid_batches)]
+                                        in list(range(n_valid_batches))]
                 this_validation_loss = np.mean(validation_losses)
                 print('epoch %i, validation error %f %%' % \
                         (epoch, this_validation_loss * 100.))
-    
+
                 # if we got the best validation score until now
                 if this_validation_loss < best_validation_loss:
-    
+
                     #improve patience if loss improvement is good enough
                     if this_validation_loss < best_validation_loss * improvement_threshold:
                         patience = max(patience, iter * patience_increase)
-    
+
                     # save best validation score and iteration number
                     best_validation_loss = this_validation_loss
                     best_iter = iter
-    
+
             if patience <= iter:
                 done_looping = True
                 break
@@ -400,12 +401,12 @@ def train_lenet():
     layer2.p_drop_perceptron=0
     layer3.p_drop_logistic=0 #when predicting set drop-out be zeros
     model_predict=theano.function(inputs=[index],outputs=layer3.y_pred,givens={x:test_set_x[index*batch_size:(index+1)*batch_size]})
-    digit_preds=Series(np.concatenate([model_predict(i) for i in xrange(n_test_batches)]))
+    digit_preds=Series(np.concatenate([model_predict(i) for i in list(range(n_test_batches))]))
     image_ids=Series(np.arange(1,len(digit_preds)+1))
     submission=DataFrame([image_ids,digit_preds]).T
     submission.columns=['ImageId','Label']
-    submission.to_csv(path+'submission_cnn.csv',index=False)                                 
-    
+    submission.to_csv(path+'submission_cnn.csv',index=False)
+
 if __name__=='__main__':
     debug_mode=False
     train_lenet()

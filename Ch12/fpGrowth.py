@@ -22,7 +22,7 @@ class treeNode:
         self.count += numOccur
         
     def disp(self, ind=1):
-        print '  '*ind, self.name, ' ', self.count
+        print('  '*ind, self.name, ' ', self.count)
         for child in self.children.values():
             child.disp(ind+1)
 
@@ -37,7 +37,8 @@ def createTree(dataSet, minSup=1): #create FP-tree from dataset but don't mine
             del(headerTable[k])
     freqItemSet = set(headerTable.keys())
     #print 'freqItemSet: ',freqItemSet
-    if len(freqItemSet) == 0: return None, None  #if no items meet min support -->get out
+    if len(freqItemSet) == 0:
+        return None, None  #if no items meet min support -->get out
     for k in headerTable:
         headerTable[k] = [headerTable[k], None] #reformat headerTable to use Node link 
     #print 'headerTable: ',headerTable
@@ -61,7 +62,7 @@ def updateTree(items, inTree, headerTable, count):
             headerTable[items[0]][1] = inTree.children[items[0]]
         else:
             updateHeader(headerTable[items[0]][1], inTree.children[items[0]])
-    if len(items) > 1:#call updateTree() with remaining ordered items
+    if len(items) > 1: #call updateTree() with remaining ordered items
         updateTree(items[1::], inTree.children[items[0]], headerTable, count)
         
 def updateHeader(nodeToTest, targetNode):   #this version does not use recursion
@@ -136,7 +137,7 @@ def getLotsOfTweets(searchStr):
     #you can get 1500 results 15 pages * 100 per page
     resultsPages = []
     for i in range(1,15):
-        print "fetching page %d" % i
+        print("fetching page %d" % i)
         searchResults = api.GetSearch(searchStr, per_page=100, page=i)
         resultsPages.append(searchResults)
         sleep(6)

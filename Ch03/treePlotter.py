@@ -3,6 +3,7 @@ Created on Oct 14, 2010
 
 @author: Peter Harrington
 '''
+
 import matplotlib.pyplot as plt
 
 decisionNode = dict(boxstyle="sawtooth", fc="0.8")  #创建字典。 boxstyle=”sawtooth” 表示注解框的边缘是波浪线，fc=”0.8” 是颜色深度

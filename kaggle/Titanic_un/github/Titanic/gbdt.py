@@ -1,4 +1,4 @@
-import loaddata
+from kaggle.Titanic_un.github.Titanic import loaddata
 import numpy as np
 import csv
 from sklearn.ensemble import GradientBoostingClassifier
@@ -27,7 +27,7 @@ def report(grid_scores,n_top=10):
     return params
 
 def Titanic_gbdt():
-    print '\nUsing Gradient Boosting Descision Tree, Generating initial training/test sets'
+    print('\nUsing Gradient Boosting Descision Tree, Generating initial training/test sets')
     train_df,test_df=loaddata.getData(keep_bins=True,keep_scaled=True,keep_interactive_auto=True)
     #print '\n',train_df.columns.size,'Feed in features of GBDT',train_df.columns.values
     #save the 'PassengerId' column
@@ -39,7 +39,7 @@ def Titanic_gbdt():
     y=train_df.values[:,0]
     X_test=test_df.values
     ########################Step5: Reduce initial feature set with estimated feature importance####
-    print "\nRough fitting a GBDT to determine feature importance"
+    print("\nRough fitting a GBDT to determine feature importance")
     clf=GradientBoostingClassifier(n_estimators=100,learning_rate=1,max_depth=3).fit(X,y)
     feature_importance=clf.feature_importances_
     feature_importance=100.0*(feature_importance/feature_importance.max())
@@ -65,7 +65,7 @@ def Titanic_gbdt():
     X_test=X_test[:,important_idx][:,sorted_idx]
     #print "\nSorted (DESC) Useful X:\n",X
     test_df=test_df.iloc[:,important_idx].iloc[:,sorted_idx]
-    print '\nTraining with', X.shape[1], "features:\n", test_df.columns.values
+    print('\nTraining with', X.shape[1], "features:\n", test_df.columns.values)
     ########################Step6:Parameter tunning with CrossValidation(RandomSearch)###########
     ###Random search the best parameter
     """
@@ -88,20 +88,20 @@ def Titanic_gbdt():
     #============================================================================================
     
     ########################Step7:Model generation/validation(Learning curve/Roc curve)#############
-    print "Generating RandomForestClassifier model with parameters:",params
+    print("Generating RandomForestClassifier model with parameters:",params)
     clf=GradientBoostingClassifier(**params)
     ###Predict the accuracy on test set(hold some data of training set to test)
-    print "\nCalculating the Accuracy..."
+    print("\nCalculating the Accuracy...")
     test_accs=[]
     for i in range(5):
         X_train,X_hold,y_train,y_hold=train_test_split(X,y,test_size=0.3)
         clf.fit(X_train,y_train)
         acc=clf.score(X_hold,y_hold)
-        print "\nAccuracy is:{:.4f}".format(acc)
+        print("\nAccuracy is:{:.4f}".format(acc))
         test_accs.append(acc)
     acc_mean="%.3f"%(np.mean(test_accs))
     acc_std="%.3f"%(np.std(test_accs))
-    print "\nmean accuracy:",acc_mean,"and stddev:",acc_std
+    print("\nmean accuracy:",acc_mean,"and stddev:",acc_std)
     ########################Step8:Predicting and Saving result######################################
     clf.fit(X,y)
     return test_ids,clf.predict(X_test),float(acc_mean)
@@ -116,4 +116,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')

@@ -1,4 +1,4 @@
-import loaddata
+from kaggle.Titanic_un.github.Titanic import loaddata
 import numpy as np
 import csv
 from sklearn.svm import SVC
@@ -26,7 +26,7 @@ def report(grid_scores,n_top=10):
     return params
 
 def Titanic_svc():
-    print '\nUsing Support Vector Machine, Generating initial training/test sets'
+    print('\nUsing Support Vector Machine, Generating initial training/test sets')
     train_df,test_df=loaddata.getData(keep_binary=True,keep_bins=True,keep_scaled=False)
     #print '\n',train_df.columns.size,'Feed in features of SVM',train_df.columns.values
     #save the 'PassengerId' column
@@ -39,7 +39,7 @@ def Titanic_svc():
     X_test=test_df.values
     svc=SVC()
     ########################Step5: Reduce initial feature set with estimated feature importance####
-    print "\nfeed SVM with all binary features"
+    print("\nfeed SVM with all binary features")
     ########################Step6:Parameter tunning with CrossValidation(RandomSearch)###########
     ###Random search the best parameter
     """
@@ -95,20 +95,20 @@ def Titanic_svc():
     #============================================================================================
     
     ########################Step7:Model generation/validation(Learning curve/Roc curve)#############
-    print "Generating RandomForestClassifier model with parameters:",params
+    print("Generating RandomForestClassifier model with parameters:",params)
     svc=SVC(**params)
     ###Predict the accuracy on test set(hold some data of training set to test)
-    print "\nCalculating the Accuracy..."
+    print("\nCalculating the Accuracy...")
     test_accs=[]
     for i in range(5):
         X_train,X_hold,y_train,y_hold=train_test_split(X,y,test_size=0.3)
         svc.fit(X_train,y_train)
         acc=svc.score(X_hold,y_hold)
-        print "\nAccuracy is:{:.4f}".format(acc)
+        print("\nAccuracy is:{:.4f}".format(acc))
         test_accs.append(acc)
     acc_mean="%.3f"%(np.mean(test_accs))
     acc_std="%.3f"%(np.std(test_accs))
-    print "\nmean accuracy:",acc_mean,"and stddev:",acc_std
+    print("\nmean accuracy:",acc_mean,"and stddev:",acc_std)
     ########################Step8:Predicting and Saving result######################################
     svc.fit(X,y)
     return test_ids,svc.predict(X_test),float(acc_mean)
@@ -123,4 +123,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')

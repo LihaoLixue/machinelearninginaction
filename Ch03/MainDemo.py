@@ -1,11 +1,11 @@
-from Ch03 import trees, treePlotter
-from Ch03.treePlotter import getNumLeafs
+from Ch03 import trees
+
 
 myData,labels=trees.createDataSet()
 # c1 = trees.chooseBestFeatureToSplit(myData)
-d1= trees.createTreeOfEntroy(myData,labels)
+d1 = trees.createTreeOfEntroy(myData,labels)
 print(d1)
-treePlotter.createPlot(d1)
+# treePlotter.createPlot(d1)
 
 # a=treePlotter.retrieveTree(0)
 # treePlotter.createPlot()

@@ -4,7 +4,7 @@ import numpy as np
 from pandas import DataFrame,Series
 from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
 import pandas as pd
-path='C:\\Users\\wei\\Desktop\\Kaggle\\Kaggle101\\Digit Recognizer\\'
+path = "./data/"
 
 def shared_dataset(data_xy,borrow=True):
     """
@@ -23,7 +23,7 @@ def shared_dataset(data_xy,borrow=True):
     return shared_x,T.cast(shared_y,'int32')
 
 def load_data(path):
-    print '...loading data'
+    print('...loading data')
     train_df=DataFrame.from_csv(path+'train.csv',index_col=False).fillna(0).astype(int)
     test_df=DataFrame.from_csv(path+'test.csv',index_col=False).fillna(0).astype(int)
     if debug_mode==False:
@@ -224,7 +224,7 @@ def train_old_net():
     n_valid_batches=valid_set_x.get_value(borrow=True).shape[0]/batch_size
     n_test_batches=test_set_x.get_value(borrow=True).shape[0]/batch_size
     
-    print '...building the model'
+    print('...building the model')
     index=T.lscalar()
     x=T.matrix('x')
     y=T.ivector('y')
@@ -281,7 +281,7 @@ def train_old_net():
     ##############
     #Train Model##
     ##############
-    print '...training'
+    print('...training')
     
     #early-stopping parameters
     patience=10000 #look as this many examples regardless
@@ -301,13 +301,13 @@ def train_old_net():
     
     while(epoch<n_epochs) and (not done_looping):
         epoch=epoch+1
-        for minibatch_index in xrange(n_train_batches):
+        for minibatch_index in list(range(n_train_batches)):
             minibatch_avg_cost=train_model(minibatch_index)
             #iteration number
             iter=(epoch-1)*n_train_batches+minibatch_index
             if (iter+1)% validation_frequency==0:
                 #validation
-                validation_error_rate=[validate_model(i) for i in xrange(n_valid_batches)]
+                validation_error_rate=[validate_model(i) for i in list(range(n_valid_batches))]
                 this_validation_error_rate=np.mean(validation_error_rate)
                 print ('epoch %i,validation error %f %%'%(epoch,this_validation_error_rate*100.))
                 
@@ -328,7 +328,7 @@ def train_old_net():
     classifier.p_drop_logistic=0
     y_x=classifier.predict()
     model_predict=theano.function(inputs=[index],outputs=y_x,givens={x:test_set_x[index*batch_size:(index+1)*batch_size]})
-    digit_preds=Series(np.concatenate([model_predict(i) for i in xrange(n_test_batches)]))
+    digit_preds=Series(np.concatenate([model_predict(i) for i in list(range(n_test_batches))]))
     image_ids=Series(np.arange(1,len(digit_preds)+1))
     submission=DataFrame([image_ids,digit_preds]).T
     submission.columns=['ImageId','Label']

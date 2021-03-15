@@ -86,6 +86,6 @@ for test in testData:
     count.append(string)
     passengerid.append(test[0])
 result = pd.DataFrame({'PassengerId':passengerid, 'Survived':count})
-result.to_csv('titanic/abc.csv',index=False)
+result.to_csv('titanic/telecom_churn.csv',index=False)
 print(result)
 

@@ -8,11 +8,11 @@ from time import sleep
 
 def loadDataSet(fileName):
     dataMat = []; labelMat = []
-    fr = open(fileName)
-    for line in fr.readlines():
-        lineArr = line.strip().split('\t')
-        dataMat.append([float(lineArr[0]), float(lineArr[1])])
-        labelMat.append(float(lineArr[2]))
+    with open(fileName,'r') as f:
+        for line in f:
+            lineArr = line.strip().split('\t')
+            dataMat.append([float(lineArr[0]), float(lineArr[1])])
+            labelMat.append(float(lineArr[2]))
     return dataMat,labelMat
 
 def selectJrand(i,m):
@@ -230,7 +230,7 @@ def loadImages(dirName):
     return trainingMat, hwLabels    
 
 def testDigits(kTup=('rbf', 10)):
-    dataArr,labelArr = loadImages('trainingDigits')
+    dataArr,labelArr = loadImages('./digits/trainingDigits')
     b,alphas = smoP(dataArr, labelArr, 200, 0.0001, 10000, kTup)
     datMat=mat(dataArr); labelMat = mat(labelArr).transpose()
     svInd=nonzero(alphas.A>0)[0]
@@ -244,7 +244,7 @@ def testDigits(kTup=('rbf', 10)):
         predict=kernelEval.T * multiply(labelSV,alphas[svInd]) + b
         if sign(predict)!=sign(labelArr[i]): errorCount += 1
     print("the training error rate is: %f" % (float(errorCount)/m))
-    dataArr,labelArr = loadImages('testDigits')
+    dataArr,labelArr = loadImages('./digits/testDigits')
     errorCount = 0
     datMat=mat(dataArr); labelMat = mat(labelArr).transpose()
     m,n = shape(datMat)

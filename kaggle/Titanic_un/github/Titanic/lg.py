@@ -1,4 +1,4 @@
-import loaddata
+from kaggle.Titanic_un.github.Titanic import loaddata
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
@@ -27,7 +27,7 @@ def report(grid_scores,n_top=10):
     return params
 
 def Titanic_lg():
-    print "\nUsing Logistic Regression,Generating initial training/test sets"
+    print("\nUsing Logistic Regression,Generating initial training/test sets")
     train_df,test_df=loaddata.getData(keep_binary=True,keep_bins=True,keep_scaled=True,keep_interactive_manually=True)
     #save the 'PassengerId' column
     test_ids=test_df['PassengerId']
@@ -62,20 +62,20 @@ def Titanic_lg():
     #============================================================================================
     
     ########################Step7:Model generation/validation(Learning curve/Roc curve)#############
-    print "Generating LogisticRegreesion model with parameters:",params
+    print("Generating LogisticRegreesion model with parameters:",params)
     forest=LogisticRegression(**params)
     ###Predict the accuracy on test set(hold some data of training set to test)
-    print "\nCalculating the Accuracy..."
+    print("\nCalculating the Accuracy...")
     test_accs=[]
     for i in range(5):
         X_train,X_hold,y_train,y_hold=train_test_split(X,y,test_size=0.3)
         forest.fit(X_train,y_train)
         acc=forest.score(X_hold,y_hold)
-        print "\nAccuracy is:{:.4f}".format(acc)
+        print("\nAccuracy is:{:.4f}".format(acc))
         test_accs.append(acc)
     acc_mean="%.3f"%(np.mean(test_accs))
     acc_std="%.3f"%(np.std(test_accs))
-    print "\nmean accuracy:",acc_mean,"and stddev:",acc_std
+    print("\nmean accuracy:",acc_mean,"and stddev:",acc_std)
     ########################Step8:Predicting and Saving result######################################
     return test_ids,forest.predict(X_test),float(acc_mean)
     
@@ -89,4 +89,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')

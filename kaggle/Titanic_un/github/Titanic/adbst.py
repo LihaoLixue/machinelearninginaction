@@ -27,7 +27,7 @@ def report(grid_scores,n_top=10):
     return params
 
 def Titanic_adbst():
-    print '\nUsing Adaptive Boosting Descision Tree, Generating initial training/test sets'
+    print('\nUsing Adaptive Boosting Descision Tree, Generating initial training/test sets')
     train_df,test_df=loaddata.getData(keep_binary=True,keep_bins=True)
     #print '\n',train_df.columns.size,'Feed in features of Adaboost DT',train_df.columns.values
     #save the 'PassengerId' column
@@ -39,7 +39,7 @@ def Titanic_adbst():
     y=train_df.values[:,0]
     X_test=test_df.values
     ########################Step5: Reduce initial feature set with estimated feature importance####
-    print "\nRough fitting a Adaboost DT to determine feature importance"
+    print("\nRough fitting a Adaboost DT to determine feature importance")
     clf=AdaBoostClassifier(n_estimators=1000,learning_rate=0.01,random_state=1234567890).fit(X,y)
     feature_importance=clf.feature_importances_
     feature_importance=100.0*(feature_importance/feature_importance.max())
@@ -64,7 +64,7 @@ def Titanic_adbst():
     X_test=X_test[:,important_idx][:,sorted_idx]
     #print "\nSorted (DESC) Useful X:\n",X
     test_df=test_df.iloc[:,important_idx].iloc[:,sorted_idx]
-    print '\nTraining with', X.shape[1], "features:\n", test_df.columns.values
+    print('\nTraining with', X.shape[1], "features:\n", test_df.columns.values)
     ########################Step6:Parameter tunning with CrossValidation(RandomSearch)###########
     ###Random search the best parameter
     #==========================The best tunned parameters=========================================
@@ -75,20 +75,20 @@ def Titanic_adbst():
     #============================================================================================
     
     ########################Step7:Model generation/validation(Learning curve/Roc curve)#############
-    print "Generating AdaBoost model with parameters:",params
+    print("Generating AdaBoost model with parameters:",params)
     clf=AdaBoostClassifier(**params)
     ###Predict the accuracy on test set(hold some data of training set to test)
-    print "\nCalculating the Accuracy..."
+    print("\nCalculating the Accuracy...")
     test_accs=[]
     for i in range(5):
         X_train,X_hold,y_train,y_hold=train_test_split(X,y,test_size=0.3)
         clf.fit(X_train,y_train)
         acc=clf.score(X_hold,y_hold)
-        print "\nAccuracy is:{:.4f}".format(acc)
+        print("\nAccuracy is:{:.4f}".format(acc))
         test_accs.append(acc)
     acc_mean="%.3f"%(np.mean(test_accs))
     acc_std="%.3f"%(np.std(test_accs))
-    print "\nmean accuracy:",acc_mean,"and stddev:",acc_std
+    print("\nmean accuracy:",acc_mean,"and stddev:",acc_std)
     ########################Step8:Predicting and Saving result######################################
     clf.fit(X,y)
     return test_ids,clf.predict(X_test),float(acc_mean)
@@ -103,4 +103,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')

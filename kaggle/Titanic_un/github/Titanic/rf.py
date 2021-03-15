@@ -1,4 +1,4 @@
-import loaddata
+from kaggle.Titanic_un.github.Titanic import loaddata
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
@@ -6,7 +6,7 @@ import csv
 from sklearn.grid_search import RandomizedSearchCV
 from sklearn.cross_validation import train_test_split
 from operator import itemgetter
-path="C:\\Users\\wei\\Desktop\\Kaggle\\Kaggle101\\Titanic\\" 
+path="./data/"
 
 def report(grid_scores,n_top=10):
     """
@@ -27,7 +27,7 @@ def report(grid_scores,n_top=10):
     return params
 
 def Titanic_rf():
-    print "\nUsing RandomForest,Generating initial training/test sets..."
+    print("\nUsing RandomForest,Generating initial training/test sets...")
     train_df,test_df=loaddata.getData(keep_binary=True,keep_bins=True,keep_scaled=True,keep_interactive_auto=True)
     #save the 'PassengerId' column
     test_ids=test_df['PassengerId']
@@ -38,7 +38,7 @@ def Titanic_rf():
     y=train_df.values[:,0]
     X_test=test_df.values
     ########################Step5: Reduce initial feature set with estimated feature importance
-    print "\nRough fitting a RandomForest to determine feature importance...."
+    print("\nRough fitting a RandomForest to determine feature importance....")
     forest=RandomForestClassifier(oob_score=True,n_estimators=10000,n_jobs=-1)
     forest.fit(X,y)
     feature_importance=forest.feature_importances_
@@ -65,7 +65,7 @@ def Titanic_rf():
     X_test=X_test[:,important_idx][:,sorted_idx]
     #print "\nSorted (DESC) Useful X:\n",X
     test_df=test_df.iloc[:,important_idx].iloc[:,sorted_idx]
-    print '\nTraining with',X.shape[1],"features:\n",test_df.columns.values
+    print('\nTraining with',X.shape[1],"features:\n",test_df.columns.values)
     
     ########################Step6:Parameter tunning with CrossValidation(RandomSearch)###########
     ###Random search the best parameter
@@ -91,30 +91,30 @@ def Titanic_rf():
     #============================================================================================
     
     ########################Step7:Model generation/validation(Learning curve/Roc curve)#############
-    print "Generating RandomForestClassifier model with parameters:",params
+    print("Generating RandomForestClassifier model with parameters:",params)
     forest=RandomForestClassifier(n_jobs=-1,oob_score=True,**params)
     ###Calculate the OOB score
-    print "\nCalculating the OOB score..."
+    print("\nCalculating the OOB score...")
     test_scores=[]
     for i in range(1):
         forest.fit(X,y)
-        print "\nOOB:",forest.oob_score_
+        print("\nOOB:",forest.oob_score_)
         test_scores.append(forest.oob_score_)
     oob="%.3f"%(np.mean(test_scores))
     oob_std="%.3f"%(np.std(test_scores))
-    print "OOB mean score:",oob,"and stddev:",oob_std
+    print("OOB mean score:",oob,"and stddev:",oob_std)
     ###Predict the accuracy on test set(hold some data of training set to test)
-    print "\nCalculating the Accuracy..."
+    print("\nCalculating the Accuracy...")
     test_accs=[]
     for i in range(5):
         X_train,X_hold,y_train,y_hold=train_test_split(X,y,test_size=0.3)
         forest.fit(X_train,y_train)
         acc=forest.score(X_hold,y_hold)
-        print "\nAccuracy is:{:.4f}".format(acc)
+        print("\nAccuracy is:{:.4f}".format(acc))
         test_accs.append(acc)
     acc_mean="%.3f"%(np.mean(test_accs))
     acc_std="%.3f"%(np.std(test_accs))
-    print "\nmean accuracy:",acc_mean,"and stddev:",acc_std
+    print("\nmean accuracy:",acc_mean,"and stddev:",acc_std)
     ########################Step8:Predicting and Saving result######################################
     return test_ids,forest.predict(X_test),float(acc_mean)
     
@@ -128,4 +128,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')

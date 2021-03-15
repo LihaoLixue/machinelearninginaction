@@ -1,10 +1,10 @@
-import rf
-import gbdt
-import svc
-import adbst
+from kaggle.Titanic_un.github.Titanic import rf
+from kaggle.Titanic_un.github.Titanic import gbdt
+from kaggle.Titanic_un.github.Titanic import svc
+from kaggle.Titanic_un.github.Titanic import adbst
 import numpy as np
 import csv
-import lg
+from kaggle.Titanic_un.github.Titanic import lg
 path="C:\\Users\\wei\\Desktop\\Kaggle\\Kaggle101\\Titanic\\" 
 
 if __name__=='__main__':
@@ -28,4 +28,4 @@ if __name__=='__main__':
     file_object.writerow(["PassengerId","Survived"])
     file_object.writerows(output)
     predict_file.close()
-    print 'Done'
+    print('Done')
